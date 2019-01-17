@@ -1,0 +1,27 @@
+<%  include ./partials/header %>
+
+<div id="formContainer" class="container rounded shadow bg-light my-5">
+    <form class="py-5" action="/contact" method="POST">
+        <div class="row">
+            <div class ="col-4">
+                <input type="text" class="form-control" name="name" placeholder="Name" required>
+            </div>
+            <div class ="col-4">
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+            <div class ="col-4">
+                <input type="text" class="form-control" name="company" placeholder="Company" required>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class ="col-12">
+                <textarea class='form-control' name="content" placeholder="Message" rows="10" required></textarea>
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%  include ./partials/footer %>
