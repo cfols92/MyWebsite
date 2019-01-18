@@ -40,7 +40,7 @@ app.post("/contact",function(req,res){
         subject: 'New message from contact form at chrisfolsom.herokuapp.com',
         text: `${req.body.name} (${req.body.email}) from ${req.body.company} says: ${req.body.content}`
     };
-    smtpTrans.sendMail(mailOpts,function(err,res){
+    smtpTrans.sendMail(mailOpts,function(err,response){
         if(err){
             console.log(err);
             // res.render("contact-failure");
