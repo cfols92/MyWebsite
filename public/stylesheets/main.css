@@ -3,6 +3,11 @@
     overflow-y: hidden;
 }
 
+.imageText{
+    border: 1px solid white;
+    text-align: center;
+}
+
 textarea{
     margin:auto;
 }
@@ -26,4 +31,58 @@ textarea{
 
 #hello{
     font-size: 20px;
+}
+
+#image1{
+    background-image: url("https://source.unsplash.com/MYbhN8KaaEc");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image2{
+    background-image: url("/graduation.jpg");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image3{
+    background-image: url("/friends.jpg");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image4{
+    background-image: url("/Shelli.jpg");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image5{
+    background-image: url("/colorado.jpg");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image6{
+    background-image: url("/Easter.jpg");
+    padding: 300px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
