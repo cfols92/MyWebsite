@@ -56,16 +56,17 @@ app.post("/contact",function(req,res){
         if(err){
             console.log(err);
             //res.render("contact-failure");
-            res.send("Contact failure");
+            //res.send("Contact failure");
         } else {
+            alert("Thank you for your message! I will get back to you as soon as possible.");
             res.redirect("/home");
             //res.render("contact-success");
         }
     });
 });
 
-app.listen(process.env.PORT,process.env.IP);
+//app.listen(process.env.PORT,process.env.IP);
 
-// app.listen(3000,function(){
-//     console.log("Now serving");
-// });
+app.listen(3000,function(){
+    console.log("Now serving");
+});
