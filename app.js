@@ -65,8 +65,8 @@ app.post("/contact",function(req,res){
     });
 });
 
-//app.listen(process.env.PORT,process.env.IP);
+app.listen(process.env.PORT,process.env.IP);
 
-app.listen(3000,function(){
-    console.log("Now serving");
-});
+// app.listen(3000,function(){
+//     console.log("Now serving");
+// });
