@@ -3,7 +3,7 @@ var express = require("express"),
     nodemailer = require("nodemailer"),
     bodyParser = require("body-parser");
 
-//require('dotenv').config();
+require('dotenv').config();
     
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
@@ -39,10 +39,8 @@ app.post("/contact",function(req,res){
         // port: 465,
         // secure: true,
         auth: {
-          //user: process.env.GMAIL_USER,
-          //pass: process.env.GMAIL_PASS
-          user: 'cfols92@gmail.com',
-          pass: 'Thunnder1'
+          user: process.env.GMAIL_USER,
+          pass: process.env.GMAIL_PASS
         }
     });
 
