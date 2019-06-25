@@ -58,7 +58,7 @@ app.post("/contact",function(req,res){
             //res.render("contact-failure");
             //res.send("Contact failure");
         } else {
-            alert("Thank you for your message! I will get back to you as soon as possible.");
+            // alert("Thank you for your message! I will get back to you as soon as possible.");
             res.redirect("/home");
             //res.render("contact-success");
         }
