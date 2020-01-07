@@ -3,7 +3,7 @@ var express = require("express"),
     nodemailer = require("nodemailer"),
     bodyParser = require("body-parser");
 
-//require('dotenv').config();
+require('dotenv').config();
     
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
